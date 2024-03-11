@@ -3,7 +3,7 @@
 Cosumo de api da https://restcountries.com/
 Para implementação de funcionalidades, como listagem, historico. 
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/ba673c51-5e34-4898-bc45-ad7f0d2135ef/deploy-status)](https://app.netlify.com/sites/countriesbrunogm2/deploys)
+[![Acesso por aqui!](https://countriesbrunogm2.netlify.app/)
 
 ## Start Project:
 
