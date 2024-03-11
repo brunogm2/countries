@@ -3,7 +3,7 @@
 Cosumo de api da https://restcountries.com/
 Para implementação de funcionalidades, como listagem, historico. 
 
-[Acesso clicando aqui!](https://countriesbrunogm2.netlify.app/)
+[ACESSE DIRETAMENTE CLICANDO AQUI!](https://countriesbrunogm2.netlify.app/)
 
 ## Start Project:
 
