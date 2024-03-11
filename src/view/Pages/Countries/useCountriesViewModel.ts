@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { keepPreviousData, useQuery } from "@tanstack/react-query";
 
 import { useCountryStore } from "@/app/store/Country/Country";
@@ -17,6 +17,10 @@ export function useCountriesViewModel() {
     const [countries, setCountries] = useLocalStorage('countries', []);
 
     const itemsPerPage = 12;
+    
+    useEffect(() => {
+        setStartIndex(0);
+    }, [country]);
 
     const { data, isLoading, error, refetch } = useQuery({
         queryKey: ['country'],

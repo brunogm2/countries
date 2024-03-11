@@ -3,7 +3,6 @@ import { ArrowRightIcon, Banknote, Languages, MapPin, PersonStanding, X } from "
 
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import { useCountryStore } from "@/app/store/Country/Country";
-import { Skeleton } from "@/view/components/ui/Skeleton";
 
 export default function CountryInfo() {
 
