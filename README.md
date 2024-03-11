@@ -20,6 +20,7 @@ Para implementação de funcionalidades, como listagem, historico.
 ## 🛠 Tecnologias usadas:
 
 * Architecture: `MVVM`
+* Responsive: `TRUE`
 * Framework: `React vite`
 * Language: `Typescript + Javascript`
 * State Management: `Zustand`
