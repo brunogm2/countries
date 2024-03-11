@@ -1,7 +1,7 @@
 import { useSearchParams } from 'react-router-dom';
 
 export function useSetCountryQueryParam() {
-    const [searchParams, setSearchParams] = useSearchParams();
+    const [_, setSearchParams] = useSearchParams();
 
     const setCountryQueryParam = (key: string, value?: any): void => {
         setSearchParams(state => {

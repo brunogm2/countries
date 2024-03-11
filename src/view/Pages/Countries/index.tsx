@@ -2,10 +2,6 @@ import { Transition } from "@headlessui/react";
 
 import {
     ArrowRightIcon,
-    History,
-    Moon,
-    Settings,
-    Sun
 } from "lucide-react";
 
 import { Button } from "@/view/components/ui/Button";
@@ -20,7 +16,6 @@ import sad from '../../../assets/images/sad.svg'
 import CountryInfo from "./components/CountryInfo";
 import { useCountriesViewModel } from "./useCountriesViewModel";
 
-import { Header } from "@/view/components/Header";
 import { useCountryQueryParam } from "@/app/hooks/useGetCountryQueryParam";
 
 export function Countries() {
@@ -52,7 +47,7 @@ export function Countries() {
                             <img
                                 src={country.flags?.svg}
                                 alt=""
-                                className="w-24 h-24 rounded-md bg-red-300"
+                                className="w-24 h-24 rounded-md"
                             />
                             <div className="flex flex-col items-center">
                                 <strong>{country.name?.common}</strong>

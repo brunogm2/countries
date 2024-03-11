@@ -53,7 +53,7 @@ export function Header({ isLoading }: HeaderProps) {
                     {!country && (
                         <>
                             <Search className="mr-2 h-4 w-4" />
-                            Procurar
+                            Search
                         </>
                     )}
 
@@ -91,7 +91,7 @@ export function Header({ isLoading }: HeaderProps) {
                                 <DropdownMenuItem >
                                     <Link to="/historic" className="flex flex-row w-full">
                                         <History className="mr-2 h-4 w-4" />
-                                        <span>Historico</span>
+                                        <span>Historic</span>
                                     </Link>
                                 </DropdownMenuItem>
                             </DropdownMenuSubContent>

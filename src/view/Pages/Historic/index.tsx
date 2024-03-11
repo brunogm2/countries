@@ -1,5 +1,3 @@
-import { Header } from "@/view/components/Header";
-
 import { columns } from "./Components/datatable/columns";
 import { DataTable } from "./Components/datatable/data-table";
 

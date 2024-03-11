@@ -3,6 +3,7 @@ import { ArrowRightIcon, Banknote, Languages, MapPin, PersonStanding, X } from "
 
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import { useCountryStore } from "@/app/store/Country/Country";
+import { Skeleton } from "@/view/components/ui/Skeleton";
 
 export default function CountryInfo() {
 
@@ -84,8 +85,8 @@ export default function CountryInfo() {
                     </span>
                 </div>
 
-                <div className="bg-red-500">
-                    {isLoaded ? (
+                {isLoaded && (
+                    <div>
                         <GoogleMap
                             mapContainerStyle={{ width: '100%', height: '200px' }}
                             center={{
@@ -96,8 +97,8 @@ export default function CountryInfo() {
                         >
 
                         </GoogleMap>
-                    ) : <></>}
-                </div>
+                    </div>
+                )}
             </div>
 
             <div className="h-full flex flex-col justify-end">
