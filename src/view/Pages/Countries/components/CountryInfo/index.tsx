@@ -4,6 +4,7 @@ import { ArrowRightIcon, Banknote, Languages, MapPin, PersonStanding, X } from "
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import { useCountryStore } from "@/app/store/Country/Country";
 import { formatPopulationNumber } from "@/app/utils/formatPopulationNumber";
+import { Skeleton } from "@/view/components/ui/Skeleton";
 
 export default function CountryInfo() {
 
@@ -97,6 +98,12 @@ export default function CountryInfo() {
                         >
 
                         </GoogleMap>
+                    </div>
+                )}
+
+                {!isLoaded && (
+                    <div>
+                        <Skeleton className="w-full h-[200px]"/>
                     </div>
                 )}
             </div>
