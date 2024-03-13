@@ -3,6 +3,7 @@ import { ArrowRightIcon, Banknote, Languages, MapPin, PersonStanding, X } from "
 
 import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import { useCountryStore } from "@/app/store/Country/Country";
+import { formatPopulationNumber } from "@/app/utils/formatPopulationNumber";
 
 export default function CountryInfo() {
 
@@ -72,7 +73,7 @@ export default function CountryInfo() {
                 </div>
 
                 <strong className="text-3xl">
-                    {country?.population}
+                    {formatPopulationNumber(Number(country?.population))}
                 </strong>
             </div>
 
