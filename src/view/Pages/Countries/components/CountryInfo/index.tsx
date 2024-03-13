@@ -14,7 +14,7 @@ export default function CountryInfo() {
     })
 
     return (
-        <div className="w-full relative bg-muted rounded-lg p-6 flex flex-col gap-6 2xl:w-[336px]">
+        <div className="w-full relative border rounded-lg p-6 flex flex-col gap-6 2xl:w-[336px]">
             <button className="absolute top-0 right-0 mr-[-6px] mt-[-6px]" onClick={() => setCountry(null)}>
                 <X size={18} />
             </button>

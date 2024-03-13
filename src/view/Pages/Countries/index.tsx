@@ -39,7 +39,7 @@ export function Countries() {
                     {visibleCountries?.map((country, index) => (
                         <div
                             key={index}
-                            className="p-6 bg-muted rounded-lg flex flex-row justify-between items-center"
+                            className="p-6 border rounded-lg flex flex-row justify-between items-center gap-2"
                         >
                             <img
                                 src={country.flags?.svg}

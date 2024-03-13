@@ -1,4 +1,3 @@
-import { sleep } from '@/app/utils/sleep';
 import axios from 'axios';
 
 export const httpClient = axios.create({
@@ -7,7 +6,5 @@ export const httpClient = axios.create({
 
 
 httpClient.interceptors.response.use(async data => {
-    await sleep(1500);
-
     return data;
 })
